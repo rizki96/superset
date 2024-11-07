@@ -89,6 +89,7 @@ scripts/*.zip
 # IntelliJ
 *.iml
 venv
+.venv
 @eaDir/
 
 # PyCharm
