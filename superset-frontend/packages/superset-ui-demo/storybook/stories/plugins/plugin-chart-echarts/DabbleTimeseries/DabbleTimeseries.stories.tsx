@@ -50,8 +50,8 @@ export const StackWithNulls = (
       series_type: 'bar',
       stack,
       area,
+      orientation,
       show_extra_controls: showExtraControls,
-      orientation: orientation,
       x_axis_time_format: 'smart_date',
       x_axis: 'ds',
     }}
@@ -61,13 +61,13 @@ export const StackWithNulls = (
 StackWithNulls.args = {
   stack: true,
   area: true,
-  showExtraControls: true,
   orientation: 'vertical',
+  showExtraControls: true,
 };
 
 StackWithNulls.argTypes = {
   stack: { control: 'boolean' },
   area: { control: 'boolean' },
-  showExtraControls: { control: 'boolean' },
   orientation: { control: 'select', options: ['vertical', 'horizontal'] },
+  showExtraControls: { control: 'boolean' },
 };
